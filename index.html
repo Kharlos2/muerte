@@ -10,20 +10,57 @@
 <body>
     <header>
         <h1>Empresa God</h1>
+        <section class="header2">
+            <input type="image" id="botonSalir" class="botonSalir ocultar" src="img/cerrar-sesion.png">
+        </section>
     </header>
     <main id="main">
-        <section class="login">
-            <form class="inicio" action="">
+        <!-- inicio de sesion -->
+        <section class="ver" id="login">
+            <form id= "formularioInicio"class="inicio">
                 <h1>INICIAR SECCIÓN</h1>
-                <label for="">Ingrese Usuario</label>
+                <label>Ingrese Usuario</label>
                 <input type="text" id="nombre" placeholder="Usuario">
-                <label for="">Ingrese contraseña</label>
+                <label>Ingrese contraseña</label>
                 <input type="password" id="contraseña" placeholder="Contraseña">
                 <input type="button" id="iniciar" value="Iniciar">
             </form>
         </section>
-        <section class="contenido">
-
+        
+        <section id="contenido" class="ocultar">
+                <section id="menu" class="">
+                    <input type="button" value="Registrar cliente" id="botonCliente">
+                    <input type="button" value="Portatil"
+                    id="botonPortatil">
+                    <input type="button" value="Celular"
+                    id="botonCelular">
+                </section>
+                <section id="contenedor">
+                    <section id="cliente" class="ocultar">
+                        <form id="formularioCliente">
+                            <h1>Ingresar cliente</h1>
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Nombre" id="nombreCliente">
+                            <label>Documento</label>
+                            <input type="number" placeholder="Documento"
+                            id="documento">
+                            <label>Celular</label>
+                            <input type="number" placeholder="celular" id="incelular">
+                            <label>Dirección</label>
+                            <input type="text" placeholder="Dirección" id="direccion">
+                            <label>Correo</label>
+                            <input type="Email" placeholder="Correo" id="correo">
+                            <input type="button" value="Ingresar">
+                        </form>
+                    </section>
+                </section>
+                
+                <section id="portatil" class="formulario ocultar">
+                    <H1>PREUBA Portatil</H1>
+                </section>
+                <section id="celular" class="formulario ocultar">
+                    <H1>PRUEBA CELULAR</H1>
+                </section>
         </section>
     </main>
     <footer class="pie-pagina">
