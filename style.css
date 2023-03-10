@@ -45,7 +45,7 @@ header,h1{
 }
 main{    
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     display:flex;
     background: url(img/fondo1.jpg);
     background-position: center;
@@ -89,6 +89,10 @@ main{
     border-radius: 4px;
     height: 30px;
     border: 1px solid rgb(43, 67, 148);
+}
+#mensaje{
+    text-align: center;
+    font-size: 15px;
 }
 /* footer */
 
@@ -173,11 +177,15 @@ main{
 /* Fin menu */
 
 /* formulario cliente */
-#contenedor{
+.contenedor{
     display:flex;
     text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
 }
-#cliente{
+.estilo{
     display:flex;
     max-width: 350px;
     margin: auto auto;   
@@ -189,21 +197,114 @@ main{
     color: #fff;
     backdrop-filter: blur(20px);
 }
-#formularioCliente{
+.formulario label{
 
-    
-}
-#formularioCliente label{
     font-size: 20px;
 }
 
-#formularioCliente input{
+.formulario input{
     text-align: center;
     width: 100%;
     height: 30px;
     border-radius: 4px;
-    background-color: transparent;
     margin-bottom: 16px;
+    background-color: #efefef5b;
     border: none;
     outline: none;
+ 
+}
+.formulario input::placeholder {
+    color:black;
+}
+
+.boton{
+    width: 100%;
+    background-color: rgb(160, 217, 244);
+    border-radius: 4px;
+    height: 30px;
+    border: 1px solid rgb(43, 67, 148);
+}
+
+
+/* cards */
+
+
+#card-clientes {
+    width: 40%;
+    padding: 3rem;
+    align-content: center;
+    margin-top: 200px;
+    height: 20rem;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 6px 13px 0px #000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-clientes .titulo {
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 4rem;
+}
+#card-clientes .container-interno{
+    display: flex;
+    align-content: center;
+    text-align: center;
+
+}
+
+.info{
+    margin: 0px 10px;
+}
+.producto {
+    width: 47%;
+    padding: 3rem;
+    align-content: center;
+    margin-top: 200px;
+    height: 30rem;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 6px 13px 0px #000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.producto img{
+    width: 350px;
+    height: 280px;
+    padding: 20px;
+}
+
+
+.producto .titulo {
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 4rem;
+}
+.producto .container-interno{
+    display: flex;
+    align-content: center;
+    text-align: center;
+
+}
+.info{
+    margin: 0px 10px;
+}
+.producto img{
+    width: 350px;
+    height: 280px;
+    padding: 20px;
+    border-radius: 50px;
 }

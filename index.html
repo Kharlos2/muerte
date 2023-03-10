@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Practica</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Empresa God</h1>
+        <h1>Empresa ZZ</h1>
         <section class="header2">
             <input type="image" id="botonSalir" class="botonSalir ocultar" src="img/cerrar-sesion.png">
         </section>
@@ -17,57 +19,115 @@
     <main id="main">
         <!-- inicio de sesion -->
         <section class="ver" id="login">
-            <form id= "formularioInicio"class="inicio">
+            <form id="formularioInicio" class="inicio">
                 <h1>INICIAR SECCIÓN</h1>
                 <label>Ingrese Usuario</label>
                 <input type="text" id="nombre" placeholder="Usuario">
                 <label>Ingrese contraseña</label>
                 <input type="password" id="contraseña" placeholder="Contraseña">
                 <input type="button" id="iniciar" value="Iniciar">
+                <section id="mensaje">
+
+                </section>
             </form>
+            
+        </section>
+        <!-- Principal -->
+        <section id="contenido" class="ocultar">
+            <section id="menu" class="">
+                <input type="button" value="Registrar cliente" id="botonCliente">
+                <input type="button" value="Portatil" id="botonPortatil">
+                <input type="button" value="Celular" id="botonCelular">
+            </section>
+            <!-- formulario clientes -->
+            <section class="contenedor">
+                <section id="cliente" class="estilo ocultar">
+                    <form id="formularioCliente" class="formulario">
+                        <h1>Ingresar cliente</h1>
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Nombre" id="nombreCliente">
+                        <label>Documento</label>
+                        <input type="text" placeholder="Documento" id="documento">
+                        <label>Celular</label>
+                        <input type="text" placeholder="Celular" id="incelular">
+                        <label>Dirección</label>
+                        <input type="text" placeholder="Dirección" id="direccion">
+                        <label>Correo</label>
+                        <input type="Email" placeholder="Correo" id="correo">
+                        <input type="button" value="Ingresar" id="btnCliente" class="boton">
+                    </form>
+                </section>
+            </section>
+
+            <!-- formulario portatil -->
+            <section class="contenedor">
+                <section id="portatil" class="estilo ocultar">
+                    <form id="formularioPortatil" class="formulario">
+                        <h1>Portatil</h1>
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Nombre" id="nombrePortatil">
+                        <label>Referencia</label>
+                        <input type="text" placeholder="Referencia" id="referenciaPortatil">
+                        <label>Código</label>
+                        <input type="text" placeholder="Código" id="codigoPortatil">
+                        <label>Valor</label>
+                        <input type="text" placeholder="Valor" id="valorPortatil">
+                        <label>Cantidad que vende</label>
+                        <input type="Email" placeholder="Cantidad" id="cantidadPortatil">
+                        <label>Imagen ingrese URL</label>
+                        <input type="text" placeholder="Imagen Portatil" id="imagenPortatil">
+                        <input type="button" value="Ingresar" id="btnPortatil" class="boton">
+                    </form>
+                </section>
+            </section>
+            <!-- formulario celular -->
+            <section class="contenedor">
+                <section id="celular" class="estilo ocultar">
+                    <form id="formularioCelular" class="formulario">
+                        <h1>Celular</h1>
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Nombre" id="nombreCelular">
+                        <label>Referencia</label>
+                        <input type="text" placeholder="Referencia" id="referenciaCelular">
+                        <label>Código</label>
+                        <input type="text" placeholder="Código" id="codigoCelular">
+                        <label>Valor</label>
+                        <input type="text" placeholder="Valor" id="valorCelular">
+                        <label>Cantidad que vende</label>
+                        <input type="Email" placeholder="Cantidad" id="cantidadCelular">
+                        <label>Imagen ingrese URL</label>
+                        <input type="text" placeholder="Imagen Celular" id="imagenCelular">
+                        <input type="button" value="Ingresar" id="btnCelular" class="boton">
+                    </form>
+                </section>
+            </section>
+        </section>
+
+        <!-- card cliente -->
+        <section id="card-clientes" class="ocultar">
+
+        </section>
+
+       <!-- card celular -->
+        <section id="card-celulares" class="producto ocultar">
+            
         </section>
         
-        <section id="contenido" class="ocultar">
-                <section id="menu" class="">
-                    <input type="button" value="Registrar cliente" id="botonCliente">
-                    <input type="button" value="Portatil"
-                    id="botonPortatil">
-                    <input type="button" value="Celular"
-                    id="botonCelular">
-                </section>
-                <section id="contenedor">
-                    <section id="cliente" class="ocultar">
-                        <form id="formularioCliente">
-                            <h1>Ingresar cliente</h1>
-                            <label>Nombre</label>
-                            <input type="text" placeholder="Nombre" id="nombreCliente">
-                            <label>Documento</label>
-                            <input type="number" placeholder="Documento"
-                            id="documento">
-                            <label>Celular</label>
-                            <input type="number" placeholder="celular" id="incelular">
-                            <label>Dirección</label>
-                            <input type="text" placeholder="Dirección" id="direccion">
-                            <label>Correo</label>
-                            <input type="Email" placeholder="Correo" id="correo">
-                            <input type="button" value="Ingresar">
-                        </form>
-                    </section>
-                </section>
-                
-                <section id="portatil" class="formulario ocultar">
-                    <H1>PREUBA Portatil</H1>
-                </section>
-                <section id="celular" class="formulario ocultar">
-                    <H1>PRUEBA CELULAR</H1>
-                </section>
+        <!-- card portatil -->
+        <section id="card-portatiles" class="producto ocultar">
+            
         </section>
+
+
+
+
     </main>
+    <!-- footer -->
     <footer class="pie-pagina">
         <section class="grupo-1">
             <section class="box">
                 <section class="a">
-                        <h1>Empresa ZZ</h1>
+                    <h1>Empresa ZZ</h1>
                 </section>
             </section>
             <section class="box">
@@ -82,4 +142,5 @@
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>
